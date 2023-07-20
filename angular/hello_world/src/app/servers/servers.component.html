@@ -1,0 +1,20 @@
+<p>servers works!</p>
+
+<p>{{serverAdded}}</p>
+<!-- <input
+type="text"
+(input) = "onChangeTextEdit($event)"
+/> -->
+<p></p>
+<input
+type="text"
+[(ngModel)]="serverName"
+(input) = "onChangeTextEdit($event)"
+/>
+<br/>
+<button  (click)="serverName = ''"
+    [disabled]="serverName === ''"
+>Add Server</button>
+<p>{{serverName}}</p>
+
+
